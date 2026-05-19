@@ -1,11 +1,6 @@
 #!/bin/bash
 
 # ==============================================================================
-#  __      __   __   __      _         _    _   ___ _        _ _ 
-#  \ \    / /   \ \ / /     /_\  _ __ (_)__| | / __| |_  ___| | |
-#   \ \  / /| |__\ V /     / _ \|/ _| |/ _` | \__ \ ' \/ -_) | |
-#    \_\/_/ |____|\_/     /_/ \_\__|_|_\__,_| |___/_||_\___|_|_|
-#
 #  VLX_Acid_Shell v1.0
 #  Algorithmic 8-Bit Drum & Bass Sequencer / Streamer
 #  Concept by VirusLox | Code by Gemini
@@ -18,10 +13,10 @@ readonly OPS=("|" "|" "^" "+")
 
 show_help() {
     echo "=============================================================================="
-    echo "  __      __   __   __      _         _    _   ___ _        _ _ "
-    echo "  \ \    / /   \ \ / /     /_\  _ __ (_)__| | / __| |_  ___| | |"
-    echo "   \ \  / /| |__\ V /     / _ \|/ _| |/ _\` | \__ \ ' \/ -_) | |"
-    echo "    \_\/_/ |____|\_/     /_/ \_\__|_|_\__,_| |___/_||_\___|_|_|"
+    echo "     _         _    _   ___ _        _ _ "
+    echo "    /_\  _ __ (_)__| | / __| |_  ___| | |"
+    echo "   / _ \|/ _| |/ _\` | \__ \ ' \/ -_) | |"
+    echo "  /_/ \_\__|_|_\__,_| |___/_||_\___|_|_|"
     echo ""
     echo "  VLX_Acid_Shell v1.0"
     echo "  Algorithmic 8-Bit Drum & Bass Sequencer / Streamer"
@@ -377,7 +372,7 @@ rebuild_and_play() {
 # --- UI INITIALIZATION ---
 clear
 echo "=================================================="
-echo " VLX_Acid_Shell v1.0 // 8-Bit Bytebeat Sequencer"
+echo "   Acid_Shell v1.0 // 8-Bit Bytebeat Sequencer    "
 echo "=================================================="
 echo "COMMANDS:"
 echo " [ENTER]      : Add Random Layer"
@@ -399,7 +394,7 @@ else
     LAYERS+=("$BASE_CHUNK & t>>8")
 fi
 
-rebuild_and_play
+rebuild_and_play __      __   __   __  
 
 # --- MAIN EVENT LOOP ---
 while true; do
